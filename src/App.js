@@ -17,16 +17,34 @@ function App(props) {
     } catch (error) {
       console.log(error);
     }
+    console.log("Clicked");
   };
 
   return (
     <div>
       <div className="app">
         <div className="card">
+          <header>Advice of the Day</header>
           <h1 className="heading">{advice}</h1>
-          <button className="button" onClick={fetchAdvice}>
-           Random Advice
-          </button>
+
+          <div className="buttons">
+            <div className="features">
+              <ul>
+                <li className="sound">
+                  <div className="fas fa-volume-up"></div>
+                </li>
+                <li className="copy">
+                  <i className="fas fa-copy"></i>
+                </li>
+                <li className="share">
+                  <i className="fas fa-share"></i>
+                </li>
+              </ul>
+              <button className="button" onClick={fetchAdvice}>
+                Random Advice
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

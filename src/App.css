@@ -3,6 +3,7 @@
   padding: 0;
   height: 100vh;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 .app {
@@ -19,8 +20,8 @@
 
 .card {
   background: whitesmoke;
-  width: 45%;
-  height: 30%;
+  width: 45vw;
+  height: 40vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,11 +33,49 @@
 .heading {
   display: flex;
   align-items: center;
-  height: 582px;
+  font-size: 25px;
+  height: 580px;
+  padding-bottom: 15px;
+}
+
+.buttons {
+  border-top: 1px solid #ccc;
+  display: flex;
+  height: 100px;
+  /* width: 100px; */
+}
+
+.features {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.features ul {
+  display: flex;
+  /* align-items: center; */
+}
+
+.features ul li {
+  list-style: none;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  color: #5372f0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 50%;
+  border: 2px solid #5372f0;
+  transition: all 0.3s;
+}
+
+.features ul li:hover {
+  background: #ccc;
 }
 
 .button {
-  position: relative;
   outline: none;
   text-decoration: none;
   border-radius: 50px;
@@ -45,25 +84,33 @@
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
-  height: 200px;
-  width: 250px;
+  height: 50px;
+  width: 200px;
   opacity: 1;
   background-color: #ffffff;
-  border: 1px solid rgba(22, 76, 167, 0.6);
+  border: 2px solid rgba(22, 76, 167, 0.6);
 
   color: #164ca7;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.7px;
+  padding: 13px 22px;
+  margin: 10px;
 }
 
 .button:hover {
   animation: rotate 0.7s ease-in-out both;
 }
 
-.button:hover span {
+/* .button:hover span {
   animation: storm 0.7s ease-in-out both;
   animation-delay: 0.06s;
+}  */
+
+.features {
+  padding: 15px;
+  /* position: fixed; */
+  /* margin: 80px; */
 }
 
 @keyframes rotate {
